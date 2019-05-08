@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, p, a, ul, ol{
               margin: 20px auto;
               display: flex;
               justify-content: center;
+              
   }
   .front{
     width: 350px;
@@ -203,6 +204,7 @@ h1, h2, h3, h4, h5, p, a, ul, ol{
               animation: fadeIn .5s ease-in-out;
               overflow-x:hidden;
               box-shadow: 0 2px 0px 0px rgba(0,0,0,0.16), 0 2px 0px 0px rgba(0,0,0,0.23);
+              width: 100%;
               
           }
           .list-border li{
@@ -362,3 +364,13 @@ h1, h2, h3, h4, h5, p, a, ul, ol{
               color: #888;
           }
           
+          @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .card {
+              flex-direction: column;
+            }
+            .btn-close{
+              top:515px;
+              left: 3px;
+            }
+          }
